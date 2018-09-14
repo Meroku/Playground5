@@ -1,0 +1,17 @@
+<apex:page standardController="Product__c">  
+    <!-- Place for links -->
+    <apex:pageBlock title="{!Product__c.Name}">
+        <apex:pageBlockSection title="Amount">
+            {!Product__c.Amount__c}
+        </apex:pageBlockSection>
+                <apex:pageBlockSection title="Title">
+                    {!Product__c.Title__c}
+        </apex:pageBlockSection>
+                <apex:pageBlockSection title="Description">
+                    {!Product__c.Description__c}
+        </apex:pageBlockSection>
+                <apex:pageBlockSection title="Image">
+                     <apex:image height="350" width="450" value="{!Product__c.Link_to_Image__c}" />
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

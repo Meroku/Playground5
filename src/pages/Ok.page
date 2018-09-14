@@ -1,0 +1,30 @@
+<apex:page controller="OkController">
+    <apex:pageBlock title="Congratulations!">
+        <apex:pageBlockTable value="{!Records}" var="Record">
+            <apex:column >
+                <apex:facet name="header">Image</apex:facet>
+                <apex:image height="150" width="250" value="{!Record.Link_to_Image__c}" />
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Name</apex:facet>
+                <apex:outputText value="{!Record.Name}"/>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Title</apex:facet>
+                <apex:outputText value="{!Record.Title__c}"/>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Cost with discount</apex:facet>
+                <apex:outputText value="{!Record.Cost_with_discount__c}"/>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Cost</apex:facet>
+                <apex:outputText value="{!Record.Price__c}"/>
+            </apex:column>
+        </apex:pageBlockTable>
+        <apex:form >
+            <apex:commandButton value="Send email and Back" action="{!Home}">
+            </apex:commandButton>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

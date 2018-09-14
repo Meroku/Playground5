@@ -1,0 +1,45 @@
+<apex:page controller="TestDisplayQueryList">
+    <apex:pageBlock title="Spaceships" id="list">
+        <apex:form >
+            Filter:
+            <apex:selectList value="{!selected}" multiselect="false" size="1">
+                <apex:selectOptions value="{!Options}"/>
+                <apex:actionSupport action="{!orderby}" event="onchange" reRender="list"/>
+            </apex:selectList>
+        </apex:form>
+        <apex:pageBlockTable value="{!Records}" var="Record">
+            <apex:column >
+                <apex:facet name="header">Image</apex:facet>
+                <apex:image height="150" width="250" value="{!Record.Link_to_Image__c}" />
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Name</apex:facet>
+                <apex:outputText value="{!Record.Name}"/>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Title</apex:facet>
+                <apex:outputText value="{!Record.Title__c}"/>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Description</apex:facet>
+                <apex:form >
+                    <apex:outputText value="{!IF(len(Record.Description__c) <= 100, Record.Description__c, LEFT(Record.Description__c, 100) + '...')}"/>
+                    <apex:commandLink value="details" rerender="dummy" onclick="window.open('/apex/ProductPage?id={!Record.Id}')" style="{!IF(len(Record.Description__c) <= 100, 'display:none', 'display:block')}">
+                    </apex:commandLink>
+                </apex:form>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Cost</apex:facet>
+                <apex:outputText value="{!Record.Price__c}"/>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Buy</apex:facet>
+                <apex:form >
+                    <apex:commandButton value="Buy" action="{!redirectbuy}" rerender="dummy">
+                        <apex:param name="IdToRedirect1" value="{!Record.Id}" />
+                    </apex:commandButton>
+                </apex:form>
+            </apex:column>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

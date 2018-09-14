@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Store</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Stores</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount of goods --></label>
+        <name>Amount_of_goods__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount of provided materials --></label>
+        <name>Amount_of_provided_materials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount of sold goods --></label>
+        <name>Amount_of_sold_goods__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Period --></label>
+        <name>End_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spent of provided materials --></label>
+        <name>Spent_of_provided_materials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Period --></label>
+        <name>Start_Period__c</name>
+    </fields>
+    <layouts>
+        <layout>Store Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
