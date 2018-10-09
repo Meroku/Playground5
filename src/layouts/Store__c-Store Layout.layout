@@ -78,6 +78,8 @@
         <relatedList>Product__c.Store__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <customButtons>Upload</customButtons>
+        <customButtons>Export</customButtons>
         <fields>NAME</fields>
         <relatedList>raw_material__c.Store__c</relatedList>
     </relatedLists>

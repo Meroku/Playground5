@@ -8,4 +8,8 @@
         <label><!-- Shop --></label>
         <name>Shop</name>
     </customTabs>
+    <customTabs>
+        <label><!-- Welcome --></label>
+        <name>Welcome</name>
+    </customTabs>
 </Translations>

@@ -61,48 +61,48 @@
         <value><!-- Product --></value>
     </caseValues>
     <fields>
-        <label><!-- Amount --></label>
+        <label>Количество</label>
         <name>Amount__c</name>
     </fields>
     <fields>
-        <label><!-- Contact --></label>
+        <label>Контакт</label>
         <name>Contacts__c</name>
-        <relationshipLabel><!-- Products --></relationshipLabel>
+        <relationshipLabel>Продукты</relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Cost with discount --></label>
+        <label>Цена со скидкой</label>
         <name>Cost_with_discount__c</name>
     </fields>
     <fields>
-        <label><!-- Date of purchase --></label>
+        <label>Дата покупки</label>
         <name>Date_of_purchase__c</name>
     </fields>
     <fields>
-        <label><!-- Description --></label>
+        <label>Описание</label>
         <name>Description__c</name>
     </fields>
     <fields>
-        <label><!-- Link to Image --></label>
+        <label>Ссылка на изображение</label>
         <name>Link_to_Image__c</name>
     </fields>
     <fields>
-        <label><!-- Name --></label>
+        <label>Имя</label>
         <name>Name__c</name>
     </fields>
     <fields>
-        <label><!-- Number of purchase --></label>
+        <label>Номер покупки</label>
         <name>Number_of_purchase__c</name>
     </fields>
     <fields>
-        <label><!-- Price --></label>
+        <label>Цена</label>
         <name>Price__c</name>
     </fields>
     <fields>
-        <label><!-- Receipt date --></label>
+        <label>Дата квитанции</label>
         <name>Receipt_date__c</name>
     </fields>
     <fields>
-        <label><!-- Sale status --></label>
+        <label>Статус продажи</label>
         <name>Sale_status__c</name>
         <picklistValues>
             <masterLabel>Close</masterLabel>
@@ -114,12 +114,12 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Store --></label>
+        <label>Склад</label>
         <name>Store__c</name>
-        <relationshipLabel><!-- Products --></relationshipLabel>
+        <relationshipLabel>Продукты</relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Title --></label>
+        <label>Заголовок</label>
         <name>Title__c</name>
     </fields>
     <gender><!-- Neuter --></gender>

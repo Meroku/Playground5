@@ -70,4 +70,12 @@
         <name>Used</name>
     </recordTypes>
     <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Export --></label>
+        <name>Export</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Upload --></label>
+        <name>Upload</name>
+    </webLinks>
 </CustomObjectTranslation>
