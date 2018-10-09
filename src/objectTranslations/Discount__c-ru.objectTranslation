@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value><!-- Discount --></value>
+    </caseValues>
+    <fields>
+        <label>Акаунт</label>
+        <name>Account__c</name>
+        <relationshipLabel>Скидки</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Код Скидки</label>
+        <name>Discount_Code__c</name>
+    </fields>
+    <fields>
+        <label>Длительность</label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label>Дата окончания</label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Процент скидки</label>
+        <name>Percentes_of_discount__c</name>
+    </fields>
+    <fields>
+        <label>Дата начала</label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Скидка</label>
+        <name>Static_discount__c</name>
+    </fields>
+    <fields>
+        <label>Статус</label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ended</masterLabel>
+            <translation><!-- Ended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Discount Name --></nameFieldLabel>
+</CustomObjectTranslation>

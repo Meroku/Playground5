@@ -1,0 +1,42 @@
+<apex:page sidebar="false" controller="FileUploader" showHeader="false">
+   <apex:form >
+      <apex:sectionHeader title="Upload data from CSV file"/>
+      <apex:pagemessages />
+      <apex:pageBlock >
+             <!--  Component to allow user to upload file from local machine -->
+             <center>
+              <apex:inputFile value="{!contentFile}" filename="{!nameFile}" /> <apex:commandButton action="{!ReadFile}" value="Upload File" id="theButton" style="width:70px;"/>
+             </center>  
+      
+      <!-- After the user clicks the 'Upload File' button, this section displays the inserted data -->
+      
+      <apex:pageblocktable value="{!uploadedAccounts}" var="raw" rendered="{!NOT(ISNULL(uploadedAccounts))}">
+          <apex:column headerValue="Raw Name">
+              <apex:outputField value="{!raw.Name}"/>
+          </apex:column>
+          <apex:column headerValue="Name">
+              <apex:outputField value="{!raw.Name__c}"/>
+          </apex:column>
+          <apex:column headerValue="Amount">
+              <apex:outputField value="{!raw.Amount__c}"/>
+          </apex:column>
+          <apex:column headerValue="Receipt date">
+              <apex:outputField value="{!raw.Receipt_date__c}"/>
+          </apex:column>
+          <apex:column headerValue="Made in">
+              <apex:outputField value="{!raw.Made_in__c}"/>
+          </apex:column>
+          <apex:column headerValue="Number">
+              <apex:outputField value="{!raw.Number__c}"/>
+          </apex:column>
+          <apex:column headerValue="Quality">
+              <apex:outputField value="{!raw.Quality__c}"/>
+          </apex:column>
+          <apex:column headerValue="Title">
+              <apex:outputField value="{!raw.Title__c}"/>
+          </apex:column>
+      </apex:pageblocktable> 
+      
+      </apex:pageBlock>       
+   </apex:form>   
+</apex:page>
