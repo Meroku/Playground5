@@ -4,7 +4,7 @@
     <encodingKey>ISO-8859-1</encodingKey>
     <name>Welcome</name>
     <style>none</style>
-    <subject>Hello</subject>
+    <subject>Hello {!Contacts__c.Name}</subject>
     <type>text</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

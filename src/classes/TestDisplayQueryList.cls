@@ -30,13 +30,13 @@ public class TestDisplayQueryList {
         //Records =
         //    [select Name, Title__c, Description__c, Price__c, Link_to_Image__c from Product__c where RecordType.Name = 'Made' limit 15];
     }
-    public PageReference redirect()
+    public static PageReference redirect()
     {
         PageReference pr = new PageReference('/apex/ProductPage?id=' + ApexPages.currentPage().getParameters().get('IdToRedirect'));
         pr.setRedirect(true);
         return pr;
     }
-    public PageReference redirectbuy()
+    public static PageReference redirectbuy()
     {
         PageReference pr = new PageReference('/apex/BuyProduct?id=' + ApexPages.currentPage().getParameters().get('IdToRedirect1'));
         return pr;
@@ -85,7 +85,12 @@ public class TestDisplayQueryList {
         orderby();
     }
     public void toorderby(){
-        orderby();
+        Integer start = System.Now().millisecond();
+        while(System.Now().millisecond()< start+10){ 
+        } 
+        num++;
+        back();
+        //orderby();
     }
         public void tostart(){
             num = 1;

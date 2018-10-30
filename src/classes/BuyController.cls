@@ -52,7 +52,9 @@ public class BuyController {
         List<Discount__c> dsts = [Select Discount_Code__c, Percentes_of_discount__c, Static_discount__c From Discount__c Where Discount_Code__c = :dst.Discount_Code__c Limit 1];
         string pid = '';
         Product__c prti = new Product__c();
-        RecordType rt = [SELECT Id, Name from RecordType where name = 'Sold' AND SObjectType = 'Product__c'];
+        RecordType[] rt1 = [SELECT Id, Name from RecordType where name = 'Sold' AND SObjectType = 'Product__c'];
+        RecordType rt = new RecordType(Id = null, Name = 'Sold');
+        if(rt1.size() > 0) {rt.Id = rt1[0].Id;}
         List<Product__c> newPr = [select Name, Title__c, Description__c, Price__c, Cost_with_discount__c, Link_to_Image__c from Product__c where ID = :BuyID];
         for(Product__c pr : newPr) {
             prti.Name = pr.Name + '(Sold)';
