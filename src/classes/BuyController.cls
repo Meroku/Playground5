@@ -11,10 +11,13 @@ public class BuyController {
         acc = false;
         dd = new Discount__c();
         string un = UserInfo.getUserName();
-        for(Discount__c d : [select Name, Percentes_of_discount__c, Static_discount__c from Discount__c where Account__r.Name = :un limit 1]){
-            if(d != null) {acc = true; dd = d;}
-        }
         
+        List<Discount__c> discounts = [select Name, Percentes_of_discount__c, Static_discount__c from Discount__c where Account__r.Name = :un];
+        for(Discount__c discount : discounts) {
+            acc = true;
+            dd = discount;
+        }
+                
         cnt = new Contacts__c();
         dst = new Discount__c();
         BuyID = ApexPages.currentPage().getParameters().get('id');
